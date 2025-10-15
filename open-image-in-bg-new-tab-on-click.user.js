@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Image Picker: Hover Highlight + Open Direct (BG Tabs)
+// @name         Image Picker: Hover Highlight + Open In New Background Tab
 // @namespace    geltz.tools
 // @version      1.2
 // @description  Toggle a mode that highlights images on hover; click opens direct image URL in a background tab.
@@ -122,7 +122,6 @@
       return; // skip tiny trackers
     }
 
-    // OPEN IN BACKGROUND TAB
     GM_openInTab(url, { active: false, insert: true, setParent: true });
   };
 
@@ -145,4 +144,5 @@
     );
   }
   updateMenu();
+
 })();
